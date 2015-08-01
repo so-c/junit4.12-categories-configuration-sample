@@ -1,0 +1,2 @@
+# junit4.12-categories-configuration-sample
+CategoryアノテーションとEnclosedアノテーションを組み合わせて使った時の動きについて試してみる。
