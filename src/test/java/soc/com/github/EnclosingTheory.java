@@ -1,15 +1,19 @@
 package soc.com.github;
 
+import org.junit.experimental.categories.Category;
 import org.junit.experimental.runners.Enclosed;
 import org.junit.experimental.theories.DataPoints;
 import org.junit.experimental.theories.Theories;
 import org.junit.experimental.theories.Theory;
 import org.junit.runner.RunWith;
 
+import soc.com.github.categories.Inner;
+
 @RunWith(Enclosed.class)
 public class EnclosingTheory {
     
     @RunWith(Theories.class)
+    @Category(Inner.class)
     public static class EnclosedTheory {
         @DataPoints
         public static Fixture fixtures[] = {
