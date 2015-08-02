@@ -38,6 +38,6 @@ public class TestSuite {
     @IncludeCategory(Inner.class)
     @SuiteClasses({FooBarTest.class, FooBazTest.class, EnclosedTheory.class})
     public static class Suite4 {
-        // run testFooBar. not testFooBaz.
+        // run testFooBar and testTheory.
     }
 }
